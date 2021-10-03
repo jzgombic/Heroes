@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        bat 'ng build'
+        bat 'ng serve --proxy-config proxy.conf.json --port 7626 --open'
       }
     }
 
