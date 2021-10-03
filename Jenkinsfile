@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        bat 'cmd /c ng version'
+        bat 'npm run ng version'
       }
     }
 
