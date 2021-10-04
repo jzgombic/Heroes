@@ -15,7 +15,6 @@ pipeline {
 
     stage('Start') {
       steps {
-        bat 'WWW=dist/heroes node server.js'
         bat 'ng serve --proxy-config proxy.conf.json --port 7626 --open'
       }
     }
