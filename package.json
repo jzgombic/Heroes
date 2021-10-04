@@ -1,14 +1,14 @@
 {
-  "name": "heroes-angular",
+  "name": "heroes",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start-ng": "ng serve --proxy-config proxy.conf.json --port 7626 --open",
-    "start": "WWW=dist/heroes-angular node server.js",
+    "start": "WWW=dist/heroes node server.js",
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "map": "source-map-explorer dist/heroes-angular/*es2015*.js*",
+    "map": "source-map-explorer dist/heroes/*es2015*.js*",
     "quick": "concurrently \"npm run backend\" \"npm run start-ng\"",
     "cypress": "npx cypress open",
     "e2e": "concurrently \"npm run quick\" \"npm run cypress\"",
