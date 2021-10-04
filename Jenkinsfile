@@ -15,7 +15,7 @@ pipeline {
 
     stage('Start') {
       steps {
-        bat 'ng serve --proxy-config proxy.conf.json --port 7626 --open'
+        bat 'npm run quick'
       }
     }
 
